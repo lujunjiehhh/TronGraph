@@ -1,0 +1,26 @@
+{
+  "trongrid": {
+    "baseUrl": "https://api.trongrid.io/v1",
+    "key_rate": 15,
+    "headers": "{{'Content-Type':'application/json','TRON-PRO-API-KEY':'{api_key}'}}",
+    "get_trx_trade": "/accounts/{address}/transactions",
+    "get_usdt_trade": "/accounts/{address}/transactions/trc20",
+    "get_start_and_end_time": "/accounts/{address}/transactions/trc20"
+  },
+  "tronscan": {
+    "baseUrl": "https://apilist.tronscanapi.com/api",
+    "key_rate": 5,
+    "headers": "{{'Content-Type': 'application/json','TRON-PRO-API-KEY': '{api_key}'}}",
+    "is_contract_address": "/contract",
+    "daily_analytics": "/account/analysis",
+    "get_trc20_transfer_quantity": "/deep/account/holderToken/basicInfo/trc20/transfer"
+  },
+  "oklink": {
+    "baseUrl": "https://www.oklink.com/api/v5",
+    "key_rate": 5,
+    "headers": "{{'Ok-Access-Key': '{api_key}'}}",
+    "get_trx_start_and_end_time": "/explorer/address/address-summary",
+    "get_trx_transfer_quantity": "/explorer/address/address-summary",
+    "get_trc20_token_quantity": "/explorer/address/address-balance-fills"
+  }
+}

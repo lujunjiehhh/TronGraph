@@ -1,0 +1,9 @@
+.vscode
+.env
+.dev
+.idea
+__pycache__
+.vscode
+TronGraph
+*.csv
+.sonarlint

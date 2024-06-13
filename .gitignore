@@ -1,3 +1,10 @@
-venv
-pypy_env
+.vscode
+.env
+.dev
+.idea
 __pycache__
+.vscode
+TronGraph
+*.csv
+.sonarlint
+.js
