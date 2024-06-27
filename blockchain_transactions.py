@@ -452,26 +452,26 @@ if __name__ == "__main__":
     async def main():
         bt = BlockchainTransactions()
         await bt.init_counter()
-        # (
-        #     await bt.get_all_usdt_trans_records(
-        #         [
-        #             "TTVk3xqKJZA3oVo3g91oirbifsUnJyYzdp",
-        #             "TLRhiCwfqHbEdLqEDBsUA83JQPJAhyr7yQ",
-        #             # "TPGZHxmFwHwNQHRHr5pb7SsdHJB4jVhi1k",
-        #             # "TL7QUBTHo9tmqdzyDXod3ikQuLhH75QFAS",
-        #             # "TNj3LgXWLMp1oVdfCNKFkPKfUrCCqftcGr",
-        #             # "TWrxonF66TALQwJzPiJCqLstdZb3v533DY",
-        #             # "TXLWDuAP3F7xVjqfZPwGrnvTBYHTGYT1Qu",
-        #         ]
-        #     )
-        # ).to_csv("test2.csv")
-        # print(1)
         (
-            await bt.get_transactions(
-                "TTVk3xqKJZA3oVo3g91oirbifsUnJyYzdp",
-                "TSvudPTE2SC8X9AcGoBgiU1QqM3QjG6FR6",
+            await bt.get_all_usdt_trans_records(
+                [
+                    "TVVoxFb1Vd81NMJeVd2viznHvsQRHdjeA7",
+                    # "TLRhiCwfqHbEdLqEDBsUA83JQPJAhyr7yQ",
+                    # "TPGZHxmFwHwNQHRHr5pb7SsdHJB4jVhi1k",
+                    # "TL7QUBTHo9tmqdzyDXod3ikQuLhH75QFAS",
+                    # "TNj3LgXWLMp1oVdfCNKFkPKfUrCCqftcGr",
+                    # "TWrxonF66TALQwJzPiJCqLstdZb3v533DY",
+                    # "TXLWDuAP3F7xVjqfZPwGrnvTBYHTGYT1Qu",
+                ]
             )
-        ).to_csv("test.csv")
+        ).to_csv("TVVoxFb1Vd81NMJeVd2viznHvsQRHdjeA7.csv")
+        # print(1)
+        # (
+        #     await bt.get_transactions(
+        #         "TTVk3xqKJZA3oVo3g91oirbifsUnJyYzdp",
+        #         "TSvudPTE2SC8X9AcGoBgiU1QqM3QjG6FR6",
+        #     )
+        # ).to_csv("test.csv")
         print(2)
         await bt.close()
 
